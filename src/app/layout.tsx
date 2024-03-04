@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
 
 import { poppins } from "@/styles/fonts/fonts";
+import { Header } from "@/components/header/header";
 
 import "./globals.css";
 
@@ -14,6 +15,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={poppins.className}>
+        <Header />
+
         <main>{children}</main>
       </body>
     </html>
