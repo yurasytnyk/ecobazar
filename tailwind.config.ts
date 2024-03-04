@@ -11,6 +11,7 @@ const config: Config = {
       colors: {
         success: {
           main: "#00B207",
+          dark: "#2C742F",
         },
         gray: {
           300: "#B3B3B3",
