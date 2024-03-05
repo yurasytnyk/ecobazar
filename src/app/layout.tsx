@@ -17,7 +17,7 @@ export default function RootLayout({ children }: PropsWithChildren) {
       <body className={poppins.className}>
         <Header />
 
-        <main>{children}</main>
+        {children}
       </body>
     </html>
   );
