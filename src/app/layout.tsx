@@ -3,6 +3,7 @@ import { PropsWithChildren } from "react";
 
 import { poppins } from "@/styles/fonts/fonts";
 import { Header } from "@/components/header/header";
+import { Footer } from "@/components/footer/footer";
 
 import "./globals.css";
 
@@ -18,6 +19,8 @@ export default function RootLayout({ children }: PropsWithChildren) {
         <Header />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
