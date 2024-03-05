@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply text-white font-semibold rounded-10.5xl py-4 px-10 leading-5;
+  }
+
+  .btn.btn-success {
+    @apply bg-success-main;
+  }
+}
