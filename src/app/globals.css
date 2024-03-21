@@ -10,4 +10,8 @@
   .btn.btn-success {
     @apply bg-success-main;
   }
+
+  .input {
+    @apply px-4 py-3 border border-gray-200 text-gray-400 text-base rounded-md;
+  }
 }

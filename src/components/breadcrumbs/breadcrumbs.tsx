@@ -31,7 +31,10 @@ export const Breadcrumbs = ({ options }: Props) => {
           </li>
 
           {options.map(({ label, href }, index) => (
-            <li key={index} className="text-gray-400 last-of-type:text-success-main">
+            <li
+              key={index}
+              className="text-gray-400 last-of-type:text-success-main last-of-type:pointer-events-none"
+            >
               <Link href={href} className="flex gap-3 items-center">
                 <ChevronRightIcon />
 
