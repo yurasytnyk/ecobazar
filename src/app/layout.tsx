@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { PropsWithChildren } from "react";
+import { ThemeProvider } from "@mui/material/styles";
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v13-appRouter";
 
+import { theme } from "@/shared/theme/theme";
 import { poppins } from "@/styles/fonts/fonts";
 import { Header } from "@/components/header/header";
 import { Footer } from "@/components/footer/footer";
@@ -16,11 +19,15 @@ export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Header />
+        <AppRouterCacheProvider>
+          <ThemeProvider theme={theme}>
+            <Header />
 
-        {children}
+            {children}
 
-        <Footer />
+            <Footer />
+          </ThemeProvider>
+        </AppRouterCacheProvider>
       </body>
     </html>
   );
