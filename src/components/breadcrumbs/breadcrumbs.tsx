@@ -8,10 +8,10 @@ import breadcrumbsBgImg from "/public/images/common/breadcrumbs-bg.jpg";
 import { ChevronRightIcon } from "@/components/icons/chevron-right-icon";
 
 interface Props {
-  options: Breadcrumb[];
+  options?: Breadcrumb[];
 }
 
-export const Breadcrumbs = ({ options }: Props) => {
+export const Breadcrumbs = ({ options = [] }: Props) => {
   return (
     <div className="relative aspect-[1920/120] flex items-center">
       <Image
@@ -31,10 +31,7 @@ export const Breadcrumbs = ({ options }: Props) => {
           </li>
 
           {options.map(({ label, href }, index) => (
-            <li
-              key={index}
-              className="text-gray-400 last-of-type:text-success-main last-of-type:pointer-events-none"
-            >
+            <li key={index} className="text-gray-400 last-of-type:text-success-main">
               <Link href={href} className="flex gap-3 items-center">
                 <ChevronRightIcon />
 
