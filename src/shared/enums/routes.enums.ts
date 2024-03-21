@@ -5,6 +5,10 @@ export enum PUBLIC_ROUTES {
   BLOG = "/blog",
   ABOUT = "/about",
   CONTACT = "/contact",
+}
+
+export enum AUTH_ROUTES {
   LOGIN = "/login",
   REGISTER = "/registration",
+  FORGET_PASSWORD = "/forget-password",
 }

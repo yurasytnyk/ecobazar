@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 import { MapPin } from "@/components/icons/map-pin";
-import { PUBLIC_ROUTES } from "@/shared/enums/routes.enums";
+import { AUTH_ROUTES } from "@/shared/enums/routes.enums";
 
 export const TopHeaderNav = () => {
   return (
@@ -19,11 +19,11 @@ export const TopHeaderNav = () => {
           <ul className="flex">
             <li>
               {" "}
-              <Link href={PUBLIC_ROUTES.LOGIN}>Sign In</Link> /
+              <Link href={AUTH_ROUTES.LOGIN}>Sign In</Link> /
             </li>
 
             <li className="ml-1">
-              <Link href={PUBLIC_ROUTES.REGISTER}>Sign Up</Link>
+              <Link href={AUTH_ROUTES.REGISTER}>Sign Up</Link>
             </li>
           </ul>
         </nav>
